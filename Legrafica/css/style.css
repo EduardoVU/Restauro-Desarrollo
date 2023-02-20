@@ -1,0 +1,339 @@
+:root {
+    --verde: #8FEB7D;
+    --amarillo: #F3FF6B;
+    --blanco: #FFFFFF;
+    --gris: #5C5C5C;
+    --parrafos: Helvetica, Arial, sans-serif;
+
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Globales */
+
+h1, p, label {
+    text-transform: uppercase;
+}
+
+p {
+    font-family: var(--parrafos);
+}
+
+.contenedor {
+    max-width: 1500px;
+    width: 100%;
+}
+
+/* Utilidades */
+
+.centrar-texto {
+    text-align: center;
+}
+
+/* Para PC */
+@media (min-width: 913px) {
+    .division {
+        display: grid;
+        grid-template-areas: "izquierda derecha";
+        grid-template-columns: 1fr 0.74fr;
+        grid-auto-flow: column;
+    }
+
+    
+    .izquierda {
+        grid-area: izquierda;
+    }
+
+    .cable {
+        flex-direction: row-reverse;
+    }
+
+    .derecha{
+        grid-area: derecha;
+    }
+}
+
+
+@media (min-width: 913px) {
+    .seccion-inferior {
+        flex-direction: row;
+    }
+}
+
+.cable {
+    display: flex;
+    justify-content: right;
+    
+}
+
+.cable--imagen {
+    width: 100%;
+    height: 10rem;
+    background-image: url(../img/Imagen_1_celular.png);  
+    background-repeat: no-repeat; 
+    background-size: cover ;
+
+
+    
+}
+
+@media (min-width: 913px) {
+    .cable--imagen {
+        height: 40rem;
+        background-image: url(../img/Imagen_1.png);
+        background-size: contain;
+    }
+}
+
+.cable__sellos {
+    width: 17.565%;
+    height: 4.51%;
+    margin-top: 3rem;
+    margin-left: 4rem;
+    margin-right: 20rem;
+}
+
+.logo {
+    margin: 10% 15%;
+}
+.logo__imagen {
+    width: 100%;
+    height: 12rem;
+    background-image: url(../img/Logo_celular.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    
+}
+
+@media (min-width: 913px) {
+    .logo {
+        margin: 15% 5%;
+    }
+    .logo__imagen {
+        background-image: url(../img/logo_alter_color_horizontal_1.png);
+        height: 15rem;
+    }
+}
+
+.transformador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 913px) {
+    .transformador__cuadro {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+.transformador__imagen {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.elipse {
+    margin: 0 0 5rem 10rem;
+}
+.elipse__figura {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: var(--verde);
+    border-radius: 100%;
+    z-index: -1;
+    
+}
+
+.cuadro {
+    margin: 5% 10rem;
+    text-align: center;
+}
+
+@media (min-width: 913px) {
+    .transformador {
+        flex-direction: row;
+    }
+    .transformador__imagen {
+        height: 20rem;
+    }
+}
+
+/* Derecha */
+.derecha {
+    background-image: url(../img/fondoformpc.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.superior {
+    margin: 5rem 10rem 5rem 11.55%;
+    padding-top: 5rem;
+}
+
+@media (min-width: 913px) {
+    .superior {
+        padding-top: 0;
+    }
+}
+
+.superior__texto {
+    color: var(--blanco);
+}
+
+.contacto {
+    margin: 0 9rem 7rem 11.55%;
+}
+
+.contacto__texto {
+    color: var(--amarillo);
+    font-size: 22px;
+    line-height: 125.5%;
+    font-weight: bold;
+    letter-spacing: 0.325em;
+}
+
+/* Formulario */
+
+.error {
+    background-color: rgb(185, 0, 0);
+    text-align: center;
+    padding: 1rem;
+    color: var(--blanco);
+    grid-column: 1 / -1;
+}
+
+ .correcto {
+    background: linear-gradient(252.19deg, rgba(73, 222, 255, 0.5) -0.36%, rgba(59, 186, 240, 0) 54.63%), #24356D;
+    text-align: center;
+    padding: 1rem;
+    color: var(--blanco);
+    grid-column: 1 / -1;    
+} 
+
+.formulario {
+    display: grid;
+    gap: 1.25rem;
+    margin: 0 11.55%;
+}
+
+@media (min-width: 913px) {
+    .formulario {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.campo input, textarea {
+    background-color: transparent;
+    border: 0.8px solid var(--blanco);
+}
+
+.campo label {
+    color: var(--blanco);
+}
+
+.campo {
+    display: grid;
+    gap: 2%;
+    margin-top: 1rem;
+}
+
+@media (min-width: 913px) {
+    .campo {
+        margin-top: 3rem;
+    }
+}   
+
+.campo--full-width {
+    grid-column: 1 / -1;
+}
+
+.enviar {
+    display: grid;
+    grid-column: 1 / -1;
+    margin: 3rem 11.55%;
+    
+    
+   
+}
+
+@media (min-width: 913px) {
+    .enviar {
+        display: flex;
+        justify-content: right;
+        width: 88%;
+    }
+}
+
+.boton {
+    color: var(--blanco);
+    text-transform: uppercase;
+    padding: 2rem 0;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 4rem;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(252.19deg, rgba(73, 222, 255, 0.5) -0.36%, rgba(59, 186, 240, 0) 54.63%), #24356D;
+}
+
+@media (min-width: 913px) {
+    .boton {
+        width: 40%;
+    }
+}
+
+/* Simbolos */
+
+.simbolo {
+    display: flex;
+    justify-content: space-around;
+    margin: 10% 30%;
+    
+}
+
+@media (min-width: 913px) {
+    .simbolo {
+        justify-content: left;
+        margin: 10rem 11.55% 3rem 11.55%;
+    }
+
+    .simbolo__facebook {
+        margin-right: 2rem;
+    }
+}
+
+.inferior {
+    margin: 0 11.5%;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.inferior__texto {
+    color: var(--blanco);
+    
+}
+
+@media (min-width: 913px) {
+    .inferior {
+        text-align: start;
+        margin: 0 11.55%;
+    }
+}
+
+div {
+    border: 3px transparent cornflowerblue;
+}

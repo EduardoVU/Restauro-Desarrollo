@@ -1,0 +1,1 @@
+alert("Mañana jugamos Stellaris o LOL?")
