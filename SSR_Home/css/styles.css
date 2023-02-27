@@ -1,0 +1,202 @@
+:root {
+    --azul: #0CC5FF;
+    --blanco: #FFFFFF;
+    --blanco-fondo: #FBFBFB;
+    --negro: #000000;
+    --gris: #626262;
+    --morado: #9747FF;
+    --naranja: #FFAA47;
+
+    --fuente-titulos: 'Montserrat', sans-serif;
+    --fuente-texto: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+    --width: 28vw;
+}
+
+html {
+    box-sizing: border-box; 
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Utilidad */
+
+.margen-celular {
+    margin-left: 15.22%;
+}
+
+/*Barra con información e iconos */
+.informacion {
+    background-color: var(--azul);
+    padding: 5.5% 0;
+}
+
+.informacion__imagen {
+    width: 100px;
+    height: 100px;
+}
+
+.informacion__texto {
+    color: var(--blanco);
+    padding-top: 1.20%;
+    margin-right: 12.7%;
+    
+}
+
+.informacion__titulo {
+    font-family: var(--fuente-titulos);
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30.48px;
+}
+
+.informacion__parrafo {
+    font-size: 22px;
+    line-height: 29.7px;
+    font-weight: 500;
+    font-family: var(--fuente-texto)
+
+}
+
+@media (min-width: 913px) {
+    .informacion {
+        background-color: var(--naranja);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 2rem;
+    }
+
+    .informacion__imagen {
+        height: 96px;
+        width: 96px;
+        margin: 0;
+    }
+
+    .informacion__texto {
+        margin: 0 10% 0 1%;
+        width: 11.15%;
+        height: 40.6%;
+    }
+
+    .informacion__titulo {
+        font-size: 20px;
+    }
+
+    .informacion__parrafo {
+        font-size: 16px;
+    }
+}
+
+/* Seccion Founder and CEO */
+.fondo {
+    background-color: var(--blanco-fondo);
+}
+
+.fondo__titulos {
+    margin-left: 15%;
+}
+
+.fondo__puesto {
+    color: var(--morado);
+    font-family: var(--fuente-texto);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    margin-right: 47.83%;
+}
+
+.fondo__nombre {
+    font-family: var(--fuente-titulos);
+    font-weight: 700;
+    font-size: 35px;
+    margin-right: 14.98%;   
+}
+
+.fondo__titulos--pc {
+    display: none;
+}
+
+.espacio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.espacio__imagen {
+    width: 15rem;
+    height: 16.6rem;
+    margin: 2rem 0;
+}
+
+.parrafos {
+    margin-left: 14.73%;
+    margin-right: 13.53%;
+    font-family: var(--fuente-texto);
+    color: var(--gris);
+}
+
+.parrafos__uno {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.parrafos__dos {
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.parrafos__tres {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+@media (min-width: 913px) {
+
+    .fondo__titulos {
+        display: none;
+    }
+
+    .fondo__titulos--pc {
+        display: block;
+    }
+
+    .espacio {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .espacio__imagen {
+        content: url(../img/image_5.png);
+        width: var(--width);
+        height: calc(var(--width)*0.84);
+        margin: 30vh 0 30vh 50%;
+        
+    }
+    .parrafos__contenido {
+        width: var(--width);
+        height: calc(var(--width)*0.99);
+    }
+
+    .parrafos__uno,
+    .parrafos__dos,
+    .parrafos__tres {
+        margin-left: 7.76vw;
+    } 
+
+    .parrafos__uno,
+    .parrafos__dos {
+        font-size: 1.0416666666666667vw;
+    }
+
+    .parrafos__tres {
+        font-size: 1.171875vw
+        ;
+    }
+}
+
