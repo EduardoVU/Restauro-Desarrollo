@@ -1,17 +1,19 @@
 :root {
     --azul: #0CC5FF;
+    --azulpol: #00E0FF;
     --blanco: #FFFFFF;
     --blanco-fondo: #FBFBFB;
     --negro: #000000;
     --gris: #626262;
     --morado: #9747FF;
     --naranja: #FFAA47;
+    --purpfoot: #6F4BFF;
+    --opaco: #BEAEFF;
+
 
     --fuente-titulos: 'Montserrat', sans-serif;
     --fuente-texto: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-
-    --width: 28vw;
 }
 
 html {
@@ -22,73 +24,100 @@ html {
     box-sizing: inherit;
 }
 
-/* Utilidad */
-
-.margen-celular {
-    margin-left: 15.22%;
-}
 
 /*Barra con información e iconos */
 .informacion {
     background-color: var(--azul);
-    padding: 5.5% 0;
+    padding-left: 15.217391304347828VW;
+    padding-top: 14.251207729468598VW;
+    padding-bottom: 24.637681159420293VW;
 }
 
 .informacion__imagen {
-    width: 100px;
-    height: 100px;
+    width: 28.985507246376812VW;
+    height: 28.985507246376812VW;
+    margin-bottom: 3.140096618357488VW;
 }
 
 .informacion__texto {
     color: var(--blanco);
-    padding-top: 1.20%;
-    margin-right: 12.7%;
-    
 }
 
 .informacion__titulo {
     font-family: var(--fuente-titulos);
-    font-size: 25px;
+    font-size: 6.038647342995169VW;
     font-weight: 700;
-    line-height: 30.48px;
 }
+
+.informacion__titulo--uno {
+    width: 48.792270531400966VW;
+}
+
+.informacion__titulo--dos, 
+.informacion__titulo--tres {
+    width: 57.48792270531401VW;
+}
+
 
 .informacion__parrafo {
-    font-size: 22px;
-    line-height: 29.7px;
+    font-size: 5.314009661835748VW;
     font-weight: 500;
-    font-family: var(--fuente-texto)
-
+    font-family: var(--fuente-texto);
+    margin-top: 2.657004830917874VW;
 }
 
-@media (min-width: 913px) {
+.informacion__parrafo--uno {
+    width: 51.690821256038646VW;
+}
+
+.informacion__parrafo--dos {
+    width: 66.42512077294685VW;
+}
+
+.informacion__parrafo--tres {
+    width: 69.32367149758454VW;
+}
+
+.informacion__parrafo--uno, 
+.informacion__parrafo--dos {
+    padding-bottom: 15.458937198067632VW;
+}
+
+/* MQ Sección barra con información e iconos */
+
+@media (min-width: 769px) {
     .informacion {
         background-color: var(--naranja);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-left: 2rem;
+        display:flex;
+        padding: 3.958333333333333VW 16.5625VW 3.802083333333333VW 16.5625VW;
     }
 
     .informacion__imagen {
-        height: 96px;
-        width: 96px;
-        margin: 0;
-    }
-
-    .informacion__texto {
-        margin: 0 10% 0 1%;
-        width: 11.15%;
-        height: 40.6%;
+        width: 5VW;
+        height: 5VW;
+        margin: 0 1.5104166666666667VW 0 0;
     }
 
     .informacion__titulo {
-        font-size: 20px;
+        width: 10.520833333333334VW;
+        font-size: 1.0416666666666665VW;
+        line-height: 1.25VW;
+        margin: 0;
+        padding: 0 0 0.5729166666666666VW 0;
     }
 
     .informacion__parrafo {
-        font-size: 16px;
+        width: 12.395833333333334VW;
+        font-size: 0.8333333333333334VW;
+        margin: 0;
     }
+
+    .informacion__parrafo--uno, 
+    .informacion__parrafo--dos {
+        padding-bottom: 0;
+        margin-right: 7.447916666666667VW;
+    }
+
 }
 
 /* Seccion Founder and CEO */
@@ -97,65 +126,78 @@ html {
 }
 
 .fondo__titulos {
-    margin-left: 15%;
+    margin-left: 13.768115942028986VW;
 }
 
 .fondo__puesto {
+    width: 38.405797101449274VW;
     color: var(--morado);
     font-family: var(--fuente-texto);
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 18px;
-    margin-right: 47.83%;
+    font-size: 4.3478260869565215VW;
 }
 
 .fondo__nombre {
+    width: 71.25603864734299VW;
     font-family: var(--fuente-titulos);
     font-weight: 700;
-    font-size: 35px;
-    margin-right: 14.98%;   
+    font-size: 8.454106280193237VW; 
+    margin-top: 4.5893719806763285VW; 
 }
 
 .fondo__titulos--pc {
     display: none;
 }
 
-.espacio {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .espacio__imagen {
-    width: 15rem;
-    height: 16.6rem;
-    margin: 2rem 0;
+    width: 65.94202898550725VW;
+    height: 72.94685990338165VW;
+    margin-top: 4.5893719806763285VW;
+    margin-left: 15.458937198067632VW;
+    padding-bottom: 10.144927536231885VW;
+    margin-right: 18.59903381642512VW;
 }
 
 .parrafos {
-    margin-left: 14.73%;
-    margin-right: 13.53%;
     font-family: var(--fuente-texto);
     color: var(--gris);
 }
 
 .parrafos__uno {
-    font-weight: 500;
-    font-size: 22px;
+    margin-left: 14.734299516908212VW;
+    padding-right: 14.009661835748794VW;
+    font-size: 5.314009661835748VW;
+    line-height: 7.246376811594203VW;
 }
 
 .parrafos__dos {
-    font-weight: 400;
-    font-size: 22px;
+    margin-left: 12.560386473429952VW;
+    padding-right: 16.183574879227052VW;
+    font-size: 5.314009661835748VW;
+    line-height: 7.246376811594203VW;
 }
 
 .parrafos__tres {
-    font-weight: 700;
-    font-size: 25px;
+    margin-left: 12.560386473429952VW;
+    padding-right: 15.458937198067632VW;
+    font-size: 6.038647342995169VW;
+    line-height: 8.212560386473431VW;
 }
 
-@media (min-width: 913px) {
+.parrafos__uno,
+.parrafos__dos,
+.parrafos__tres {
+    width: 71.25603864734299VW;
+}
+
+/* MQ sección founder and CEO */
+@media (min-width: 769px) {
+    .espacio {
+        display: grid; 
+        grid-template-areas: "izquierda derecha";
+        grid-template-columns: 1fr 1fr;
+    }
 
     .fondo__titulos {
         display: none;
@@ -165,38 +207,183 @@ html {
         display: block;
     }
 
-    .espacio {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-
+    .espacio__imagen {
+        grid-area: izquierda;
+        content: url(../img/image_5.png);
+        width: 28.020833333333332VW;
+        height: 33.020833333333336VW;
+        margin: 3.3854166666666665VW 4.21875VW 3.3854166666666665VW 18.90625VW;
+        padding: 0;
     }
 
-    .espacio__imagen {
-        content: url(../img/image_5.png);
-        width: var(--width);
-        height: calc(var(--width)*0.84);
-        margin: 30vh 0 30vh 50%;
+    .parrafos {
+        grid-area: derecha;
+    }
+
+    .fondo__puesto {
+        width: 8.28125VW;
+        margin-top: 7.604166666666666VW;
+        margin-bottom: 0;
+        font-size: 0.9375VW;
+        padding-bottom: 0.9895833333333333VW;
+    }
+
+    .fondo__nombre {
+        padding-bottom: 1.6666666666666667VW;
+        width: 25.937500000000004VW;
+        font-size: 1.8229166666666667VW;
+        margin: 0;
         
     }
-    .parrafos__contenido {
-        width: var(--width);
-        height: calc(var(--width)*0.99);
+
+    .parrafos__uno {
+        line-height: 1.1458333333333333VW;
+    }
+    
+    .parrafos__dos {
+        line-height: 1.1458333333333333VW;
+    }
+    
+    .parrafos__tres {
+        font-size: 0.9375VW;
+        line-height: 1.25VW;
     }
 
+    .parrafos__uno, 
+    .parrafos__dos {
+        padding-bottom: 2.083333333333333VW;
+        font-size: 0.8333333333333334VW;
+    }
+    
     .parrafos__uno,
     .parrafos__dos,
     .parrafos__tres {
-        margin-left: 7.76vw;
-    } 
-
-    .parrafos__uno,
-    .parrafos__dos {
-        font-size: 1.0416666666666667vw;
-    }
-
-    .parrafos__tres {
-        font-size: 1.171875vw
-        ;
+        width: 26.406249999999996VW;
+        margin-left: 3.5416666666666665VW;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        padding-right: 0;
     }
 }
 
+/* Sección footer */
+
+.footer {
+    background-color: var(--purpfoot);
+    color: var(--blanco);
+}
+
+.footer__img {
+    margin-left: 10.628019323671497VW;
+    margin-top: 16.908212560386474VW;
+    width: 56.038647342995176VW;
+    height: 13.285024154589372VW;
+    margin-bottom: 12.077294685990339VW;
+}
+
+.footer__datos {
+    font-family: var(--fuente-texto);
+    font-size: 5.314009661835748VW;
+    line-height: 7.246376811594203VW;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.footer__1st {
+    width: 78.98550724637681VW;
+    margin-left: 10.144927536231885VW;
+    margin-top: 0;
+    margin-bottom: 2.657004830917874VW;
+}
+
+.subrayado {
+    margin-left: 10.144927536231885VW;
+    width: 78.98550724637681VW;
+    margin-top: 0;
+    margin-bottom: 3.3816425120772946VW;
+    text-decoration: underline;
+}
+
+.footer__numero {
+    margin-left: 10.144927536231885VW;
+    width: 78.98550724637681VW;
+    margin-top: 0;
+    margin-bottom: 4.1062801932367154VW;
+}
+
+.footer__fb {
+    width: 6.038647342995169VW;
+    height: 6.038647342995169VW;
+    margin-bottom: 13.285024154589372VW;
+}
+
+.cursos__titulo {
+    width: 66.90821256038647VW;
+    color: var(--opaco);
+    font-family: var(--fuente-titulos);
+    font-weight: 700;
+    font-size: 5.314009661835748VW;
+    line-height: 6.521739130434782VW;
+    margin: 0 0 2.4154589371980677VW 10.628019323671497VW;
+}
+
+.cursos__lista {
+    margin-top: 0;
+    margin-right: 0;
+    width: 48.26086956521739VW;
+    margin-left: 14.975845410628018VW;
+    margin-bottom: 1.4492753623188406VW;
+    font-family: var(--fuente-texto);
+    font-style: italic;
+    font-size: 5.314009661835748VW;
+    line-height: 7.246376811594203VW;
+    padding: 0;
+}
+
+.last {
+    margin-bottom: 9.420289855072465VW;
+}
+
+.direccion__title {
+    width: 46.61835748792271VW;
+    margin: 9.420289855072465VW 0 3.6231884057971016VW 4.5893719806763285VW;
+    color: var(--opaco);
+    font-weight: 700;
+    font-size: 4.3478260869565215VW;
+    line-height: 5.314009661835748VW;
+}
+
+.mapa {
+    width: 69.32367149758454VW;
+    height: 48.06763285024155VW; 
+    border-radius: 2.4154589371980677VW;
+    margin-left: 4.5893719806763285VW;
+}
+
+.footer__linea {
+    width: 79.22705314009661VW;
+    height: 0;
+    border: 0.24154589371980675VW solid var(--blanco);
+    margin-top: 15.70048309178744VW;
+}
+
+.polit {
+    font-size: 5.314009661835748VW;
+    line-height: 7.246376811594203VW;
+    text-decoration: underline;
+}
+
+.polit__uno {
+    width: 57.2463768115942VW;
+    height: 7.246376811594203VW;
+    margin: 0 0 0 10.38647342995169VW;
+}
+
+.polit__dos {
+
+}
+
+.footer__copy__p2 {
+    padding-bottom: 7.246376811594203VW;
+}
